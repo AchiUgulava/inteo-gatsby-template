@@ -19,7 +19,7 @@ const Hero = () => {
     }
   `);
   return (
-    <div>
+    <div id="#top">
       <div className="container mx-auto">
         <div className="flex flex-col xl:px-32 items-center text-center gap-6 py-20">
           <h1 className="font-display md:text-display-2xl text-display-lg">
