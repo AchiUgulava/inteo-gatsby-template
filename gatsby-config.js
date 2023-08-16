@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Inteo`,
-    description: `Award winning architecture and interior design studio template. Made by Landify.`,
-    siteUrl: `https://landify.design`, // Replace with your domain name
-    author: `@landifydesign`, // Replace with your twitter handle
+    title: `Luxi`,
+    description: `Experience the pinnacle of luxury living in Tbilisi Gardens.`,
+    siteUrl: `https://luxi.ge`,
+    author: `A_U`, // Replace with your twitter handle
   },
   plugins: [
     `gatsby-plugin-postcss`,

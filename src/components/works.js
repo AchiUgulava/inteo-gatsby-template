@@ -64,7 +64,7 @@ const Works = () => {
             </div>
           </div>
           <div className="xl:hidden flex items-start">
-            <Button label="CONTACT US" link="/" size="lg" />
+            <Button label="CONTACT US" link="#contact" size="lg" />
           </div>
         </div>
       </div>
