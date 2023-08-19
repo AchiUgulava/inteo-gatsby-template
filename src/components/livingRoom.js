@@ -6,10 +6,10 @@ import WorkItem from "./workItem";
 import Eyebrow from "./eyebrow";
 import Button from "./button";
 
-const Works = () => {
+const LivingRoom = () => {
   const data = useStaticQuery(graphql`
     {
-      allWorksJson {
+      allLivingRoomJson {
         nodes {
           id
           title
@@ -28,32 +28,28 @@ const Works = () => {
     }
   `);
   return (
-    <div id="#works">
+    <div id="#hall">
       <div className="container mx-auto">
+        <div className="flex flex-col gap-6 justify-center items-end">
+          <Eyebrow label="Area Living Room" />
+          <h3 className="font-display md:text-display-xl text-display-md font-normal pb-4">
+            Living Room
+          </h3>
+        </div>
         <div className="flex flex-col gap-12 lg:py-28 md:py-24 py-12">
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
+            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14 py-10">
+              {data.allLivingRoomJson.nodes.slice(2, 5).map((node) => (
+                <WorkItem
+                  key={node.id}
+                  image={getImage(node.image)}
+                  title={node.title}
+                  description={node.description}
+                />
+              ))}
+            </div>
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
-              <div className="flex flex-col gap-6">
-                <Eyebrow label="RECENT WORKS" />
-                <h3 className="font-display md:text-display-xl text-display-md font-normal pb-4">
-                  Some of <span className="italic">our crafts</span> made with
-                  love
-                </h3>
-              </div>
-              {data.allWorksJson.nodes.slice(0, 2).map((node) => (
-                <WorkItem
-                  key={node.id}
-                  image={getImage(node.image)}
-                  title={node.title}
-                  description={node.description}
-                />
-              ))}
-              <div className="xl:flex hidden items-start">
-                <Button label="CONTACT US" link="/" size="lg" />
-              </div>
-            </div>
-            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14">
-              {data.allWorksJson.nodes.slice(2,5).map((node) => (
+              {data.allLivingRoomJson.nodes.slice(0, 2).map((node) => (
                 <WorkItem
                   key={node.id}
                   image={getImage(node.image)}
@@ -62,9 +58,6 @@ const Works = () => {
                 />
               ))}
             </div>
-          </div>
-          <div className="xl:hidden flex items-start">
-            <Button label="CONTACT US" link="#contact" size="lg" />
           </div>
         </div>
       </div>
@@ -72,4 +65,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default LivingRoom;
