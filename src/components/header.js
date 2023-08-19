@@ -73,16 +73,17 @@ const Header = () => {
             </div>
             <Button label="CONTACT US" link="#contact" />
             <div
-               onClick={toggleMobileMenu} 
-            class="space-y-2 visible md:hidden cursor-pointer p-4">
+              onClick={toggleMobileMenu}
+              class="space-y-2 visible md:hidden cursor-pointer p-4"
+            >
               <div class="w-8 h-0.5 bg-neutral-700"></div>
               <div class="w-8 h-0.5 bg-neutral-700"></div>
               <div class="w-8 h-0.5 bg-neutral-700"></div>
             </div>
           </div>
         </div>
-       {/* Mobile menu */}
-       {isMobileMenuOpen && (
+        {/* Mobile menu */}
+        {isMobileMenuOpen && (
           <div className="flex flex-col gap-4 items-center h-auto w-full md:hidden">
             {navigation.map((item) => (
               <Link
@@ -96,6 +97,7 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <span className="w-full h-0.5 bg-gradient-to-l from-transparent via-neutral-700 to-transparent"></span>
           </div>
         )}
       </div>
