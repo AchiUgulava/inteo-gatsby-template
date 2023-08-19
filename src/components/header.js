@@ -6,6 +6,7 @@ import Button from "./button";
 
 const Header = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Add state for mobile menu
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   const handleScroll = () => {
@@ -21,6 +22,10 @@ const Header = () => {
     setPrevScrollPos(currentScrollPos);
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle mobile menu state
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -33,13 +38,22 @@ const Header = () => {
     { name: "Our Work", href: "#works" },
   ];
   return (
-    <header className={`fixed top-0 min-w-full bg-white z-20 transition-all duration-500 ${isHeaderVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform -translate-y-full'}`}>
+    <header
+      className={`fixed top-0 min-w-full bg-white z-20 transition-all duration-500 ${
+        isHeaderVisible
+          ? "opacity-100 transform translate-y-0"
+          : "opacity-0 transform -translate-y-full"
+      }`}
+    >
       <div className="container mx-auto ">
         <div className="flex py-5 justify-between items-center">
           <div className="flex flex-row gap-8 items-center">
             <Link to="#top" smooth={true} duration={500}>
               {/* <img className="h-8 w-auto" src={Logo} alt="Logo" /> */}
-              <h1 className="text-display-md font-semibold cursor-pointer hover:text-neutral-700"> Luxi </h1>
+              <h1 className="text-display-md font-semibold cursor-pointer hover:text-neutral-700">
+                {" "}
+                Luxi{" "}
+              </h1>
             </Link>
           </div>
           <div className="flex flex-row gap-6">
@@ -58,8 +72,32 @@ const Header = () => {
               ))}
             </div>
             <Button label="CONTACT US" link="#contact" />
+            <div
+               onClick={toggleMobileMenu} 
+            class="space-y-2 visible md:hidden cursor-pointer p-4">
+              <div class="w-8 h-0.5 bg-neutral-700"></div>
+              <div class="w-8 h-0.5 bg-neutral-700"></div>
+              <div class="w-8 h-0.5 bg-neutral-700"></div>
+            </div>
           </div>
         </div>
+       {/* Mobile menu */}
+       {isMobileMenuOpen && (
+          <div className="flex flex-col gap-4 items-center h-auto w-full">
+            {navigation.map((item) => (
+              <Link
+                spy={true}
+                smooth={true}
+                duration={500}
+                key={item.name}
+                to={item.href}
+                className="text-body-md font-medium text-neutral-700 hover:text-primary-600 p-4 cursor-pointer w-full text-center"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </header>
   );
