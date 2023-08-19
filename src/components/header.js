@@ -83,7 +83,7 @@ const Header = () => {
         </div>
        {/* Mobile menu */}
        {isMobileMenuOpen && (
-          <div className="flex flex-col gap-4 items-center h-auto w-full">
+          <div className="flex flex-col gap-4 items-center h-auto w-full md:hidden">
             {navigation.map((item) => (
               <Link
                 spy={true}
