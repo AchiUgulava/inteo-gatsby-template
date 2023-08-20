@@ -33,9 +33,11 @@ const Header = () => {
     };
   }, [prevScrollPos]);
   const navigation = [
+    { name: "Hall", href: "#hall" },
+    { name: "Living room", href: "#livingRoom" },
+    { name: "Theater", href: "#theater" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
-    { name: "Our Work", href: "#works" },
   ];
   return (
     <header
@@ -46,7 +48,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto ">
-        <div className="flex py-5 justify-between items-center">
+        <div className="flex lg:py-5 justify-between items-center">
           <div className="flex flex-row gap-8 items-center">
             <Link to="#top" smooth={true} duration={500}>
               {/* <img className="h-8 w-auto" src={Logo} alt="Logo" /> */}
@@ -71,7 +73,9 @@ const Header = () => {
                 </Link>
               ))}
             </div>
-            <Button label="CONTACT US" link="#contact" />
+            <div className="my-auto">
+              <Button label="CONTACT US" link="#contact" />
+            </div>
             <div
               onClick={toggleMobileMenu}
               class="space-y-2 visible md:hidden cursor-pointer p-4"
@@ -87,6 +91,7 @@ const Header = () => {
           <div className="flex flex-col gap-4 items-center h-auto w-full md:hidden">
             {navigation.map((item) => (
               <Link
+                onClick={toggleMobileMenu}
                 spy={true}
                 smooth={true}
                 duration={500}

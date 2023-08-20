@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative">
-        <GatsbyImage image={getImage(data.heroimage)} alt="Interior Design" />
+        <GatsbyImage image={getImage(data.heroimage)}  alt="Interior Design" />
         <a href="/">
           <img
             src={CtaButton}
