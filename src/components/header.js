@@ -78,11 +78,11 @@ const Header = () => {
             </div>
             <div
               onClick={toggleMobileMenu}
-              class="space-y-2 visible md:hidden cursor-pointer p-4"
+              className="space-y-2 visible md:hidden cursor-pointer p-4"
             >
-              <div class="w-8 h-0.5 bg-neutral-700"></div>
-              <div class="w-8 h-0.5 bg-neutral-700"></div>
-              <div class="w-8 h-0.5 bg-neutral-700"></div>
+              <div className="w-8 h-0.5 bg-neutral-700"></div>
+              <div className="w-8 h-0.5 bg-neutral-700"></div>
+              <div className="w-8 h-0.5 bg-neutral-700"></div>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { getImage } from "gatsby-plugin-image";
 
 import WorkItem from "./workItem";
 import Eyebrow from "./eyebrow";
-import Button from "./button";
+import Carousel from "./carousels/livingRoom";
 
 const LivingRoom = () => {
   const data = useStaticQuery(graphql`
@@ -37,8 +37,9 @@ const LivingRoom = () => {
           </h3>
         </div>
         <div className="flex flex-col gap-12 ">
+        <Carousel className="xl:hidden "/>
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
-            <div className="xl:col-span-6 lg:col-span-8 flex flex-col gap-0 xl:px-10">
+            <div className="xl:col-span-6 lg:col-span-8 xl:flex flex-col gap-0 xl:px-10 hidden ">
               {data.allLivingRoomJson.nodes.slice(2, 5).map((node) => (
                 <WorkItem
                   key={node.id}
@@ -48,6 +49,8 @@ const LivingRoom = () => {
                 />
               ))}
             </div>
+            
+
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col gap-10">
               {data.allLivingRoomJson.nodes.slice(0, 2).map((node) => (
                 <WorkItem

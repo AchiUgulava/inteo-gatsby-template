@@ -1,23 +1,27 @@
 [
-    {
-      "image": "../images/pages/areas/MARINA DAVID presentation_Page_13_Image_0003 copy.webp",
-      "title": "Living Room Decoration",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
-    },
-    {
-      "image": "../images/pages/areas/MARINA DAVID presentation_Page_15_Image_0001 copy.webp",
-      "title": "Interior Details",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
-    },
-    {
-      "image": "../images/pages/areas/MARINA DAVID presentation_Page_17_Image_0001 copy.webp"
-    },
-    {
-        "image": "../images/pages/areas/MARINA DAVID presentation_Page_18_Image_0002 copy.webp"
-    },
-      {
-        "image": "../images/pages/areas/MARINA DAVID presentation_Page_18_Image_0003 copy.webp"
-    }
-  ]
-  
-  
+  {
+    "image": "../images/pages/areas/MARINA DAVID presentation_Page_13_Image_0003 copy.webp",
+    "title": "Living Room Decoration",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
+  },
+  {
+    "image": "../images/pages/areas/MARINA DAVID presentation_Page_15_Image_0001 copy.webp",
+    "title": "Interior Details",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
+  },
+  {
+    "image": "../images/pages/areas/MARINA DAVID presentation_Page_17_Image_0001 copy.webp",
+    "title": "",
+    "description": ""
+  },
+  {
+    "image": "../images/pages/areas/MARINA DAVID presentation_Page_18_Image_0002 copy.webp",
+    "title": "",
+    "description": ""
+  },
+  {
+    "image": "../images/pages/areas/MARINA DAVID presentation_Page_18_Image_0003 copy.webp",
+    "title": "",
+    "description": ""
+  }
+]

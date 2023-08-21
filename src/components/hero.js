@@ -1,7 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-
+import Carousel from "./carousels/hero";
 import CtaButton from "../images/cta-button.svg";
 
 const Hero = () => {
@@ -34,7 +33,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative">
-        <GatsbyImage image={getImage(data.heroimage)}  alt="Interior Design" />
+      <Carousel />
         <a href="/">
           <img
             src={CtaButton}

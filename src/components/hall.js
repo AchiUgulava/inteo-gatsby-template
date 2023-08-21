@@ -4,7 +4,6 @@ import { getImage } from "gatsby-plugin-image";
 
 import WorkItem from "./workItem";
 import Eyebrow from "./eyebrow";
-import Button from "./button";
 
 const Hall = () => {
   const data = useStaticQuery(graphql`
