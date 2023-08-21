@@ -108,3 +108,5 @@ public
 
 #DS Store files
 .DS_Store
+
+.vscode

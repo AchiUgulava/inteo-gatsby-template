@@ -31,7 +31,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  }, [prevScrollPos , handleScroll]);
   const navigation = [
     { name: "Hall", href: "#hall" },
     { name: "Living room", href: "#livingRoom" },
