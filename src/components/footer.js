@@ -49,8 +49,8 @@ const Footer = () => {
               </p>
               <a
                 className="text-display-xs font-display font-normal text-primary-600"
-                href="mailto:hello@landify.design">
-                hello@landify.design
+                href="mailto:hello@luxi.ge">
+                hello@luxi.ge
               </a>
             </div>
             <div className="flex flex-col gap-2">
@@ -70,12 +70,12 @@ const Footer = () => {
         </div>
         <div className="flex lg:flex-row flex-col gap-8 lg:items-center justify-between md:mb-20 mb-10">
           <div className="text-body-md font-light">
-            © {new Date().getFullYear()} Inteo - Award winning studio. Made with
+            © {new Date().getFullYear()} Luxi a Luxury apartament in Tblisi Gardenss. Made with
             love by{" "}
             <a
-              href="https://landify.design/?ref=inteo"
+              href="#"
               className="text-primary-600">
-              Landify
+              Achi Ugulava
             </a>
           </div>
           <div className="flex lg:flex-row flex-col lg:items-center md:gap-6 gap-4">

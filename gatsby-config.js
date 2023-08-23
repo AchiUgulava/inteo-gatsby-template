@@ -29,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Landify UI`,
-        short_name: `Landify UI`,
+        name: `Luxi`,
+        short_name: `Luxi`,
         start_url: `/`,
         background_color: `#7C3AED`,
         theme_color: `#7C3AED`,

@@ -40,7 +40,7 @@ function Seo({ lang, meta, title, description, image, url }) {
         },
         {
           name: `keywords`,
-          content: `landing page, uikit, open source ui kit, landify ui kit, free uikit, figma uikit, aravinddesign, free website ui kit, free figma website ui kit, free landing page ui kit, landing page ui kit for figma, website ui kit for figma`,
+          content: `Experience the pinnacle of luxury living in Tbilisi Gardens, a prestigious building complex that houses this extraordinary 500 sq meter apartment on the 26th floor.With breathtaking city views, unique design elements, and unmatched amenities, this apartment stands as the ultimate peak of luxury in Tbilisi, Georgia. From the modern kitchen to the old-school twist in the library, every corner of this residence is crafted to perfection.`,
         },
         {
           property: `og:image`,
