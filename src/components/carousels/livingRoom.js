@@ -77,7 +77,6 @@ const Carousel = () => {
       <GatsbyImage image={getImage(data.image1)} alt="Image 1" />
       <GatsbyImage image={getImage(data.image2)} alt="Image 2" />
       <GatsbyImage image={getImage(data.image3)} alt="Image 2" />
-
     </Slider>
   );
 };

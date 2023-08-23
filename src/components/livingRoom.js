@@ -37,7 +37,6 @@ const LivingRoom = () => {
           </h3>
         </div>
         <div className="flex flex-col gap-12 ">
-        <Carousel/>
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
             <div className="xl:col-span-6 lg:col-span-8 xl:flex flex-col gap-0 xl:px-10 hidden ">
               {data.allLivingRoomJson.nodes.slice(2, 5).map((node) => (
@@ -49,7 +48,6 @@ const LivingRoom = () => {
                 />
               ))}
             </div>
-            
 
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col gap-10">
               {data.allLivingRoomJson.nodes.slice(0, 2).map((node) => (
@@ -61,6 +59,7 @@ const LivingRoom = () => {
                 />
               ))}
             </div>
+            <Carousel />
           </div>
         </div>
       </div>

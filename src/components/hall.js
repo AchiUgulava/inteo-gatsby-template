@@ -47,7 +47,7 @@ const Hall = () => {
                 />
               ))}
             </div>
-            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14 pt-36">
+            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14 xl:pt-36">
               {data.allHallJson.nodes.slice(1, 3).map((node) => (
                 <WorkItem
                   key={node.id}
