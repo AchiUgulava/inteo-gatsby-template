@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const CustomPrevArrow = ({ onClick }) => (
   <button
-    className="h-max w-max absolute z-10 text-neutral-900 font-semibold text-display-xl top-1/2 left-2 hidden lg:block"
+    className="h-max w-max absolute z-10 text-neutral-900 font-thin text-display-xl top-1/2 left-2 hidden lg:block"
     onClick={onClick}
   >
     {"<"}
@@ -17,7 +17,7 @@ const CustomPrevArrow = ({ onClick }) => (
 
 const CustomNextArrow = ({ onClick }) => (
   <button
-    className="h-max w-max absolute text-neutral-900 top-1/2 z-10 font-semibold text-display-xl right-2 hidden lg:block"
+    className="h-max w-max absolute text-neutral-900 top-1/2 z-10 font-thin text-display-xl right-2 hidden lg:block"
     onClick={onClick}
   >
     {">"}
@@ -35,7 +35,11 @@ const settings = {
 const Carousel = () => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: { eq: "pages/areas/MARINA DAVID presentation_Page_28_Image_0001 copy.webp" }) {
+      image1: file(
+        relativePath: {
+          eq: "pages/areas/MARINA DAVID presentation_Page_28_Image_0001 copy.webp"
+        }
+      ) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
