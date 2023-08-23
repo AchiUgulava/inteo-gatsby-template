@@ -35,9 +35,11 @@ const Header = () => {
   const navigation = [
     { name: "Hall", href: "#hall" },
     { name: "Living room", href: "#livingRoom" },
+    { name: "Dining Area", href: "#dining" },
+    { name: "Suites", href: "#suites" },
     { name: "Theater", href: "#theater" },
     { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
+    // { name: "Services", href: "#services" },
   ];
   return (
     <header
@@ -59,7 +61,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="flex flex-row gap-6">
-            <div className="md:flex hidden flex-row gap-4 items-center">
+            <div className="lg:flex hidden flex-row gap-4 items-center">
               {navigation.map((item) => (
                 <Link
                   spy={true}
@@ -73,12 +75,12 @@ const Header = () => {
                 </Link>
               ))}
             </div>
-            <div className="my-auto">
+            {/* <div className="my-auto">
               <Button label="CONTACT US" link="#contact" />
-            </div>
+            </div> */}
             <div
               onClick={toggleMobileMenu}
-              className="space-y-2 visible md:hidden cursor-pointer p-4"
+              className="space-y-2 visible lg:hidden cursor-pointer p-4"
             >
               <div className="w-8 h-0.5 bg-neutral-700"></div>
               <div className="w-8 h-0.5 bg-neutral-700"></div>

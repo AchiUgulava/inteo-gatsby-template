@@ -35,10 +35,10 @@ const settings = {
 const Carousel = () => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: { eq: "hero-image.webp" }) {
+      image1: file(relativePath: { eq: "pages/areas/MARINA DAVID presentation_Page_28_Image_0001 copy.webp" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 5120
+            layout: FULL_WIDTH
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
@@ -47,7 +47,7 @@ const Carousel = () => {
       image2: file(relativePath: { eq: "hero-image.webp" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 5120
+            layout: FULL_WIDTH
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )

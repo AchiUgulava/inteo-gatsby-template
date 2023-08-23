@@ -35,7 +35,7 @@ const settings = {
 const Carousel = () => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: { eq: "pages/areas/MARINA DAVID presentation_Page_17_Image_0001 copy.webp" }) {
+      image1: file(relativePath: { eq: "pages/areas/MARINA DAVID presentation_Page_30_Image_0001 copy.webp" }) {
         childImageSharp {
           gatsbyImageData(
             height:400
@@ -46,7 +46,7 @@ const Carousel = () => {
           )
         }
       }
-      image2: file(relativePath: { eq: "pages/areas/MARINA DAVID presentation_Page_18_Image_0002 copy.webp" }) {
+      image2: file(relativePath: { eq: "pages/areas/MARINA DAVID presentation_Page_26_Image_0001 copy.webp" }) {
         childImageSharp {
           gatsbyImageData(
             height:400
@@ -57,7 +57,7 @@ const Carousel = () => {
           )
         }
       }
-    image3: file(relativePath: { eq: "pages/areas/MARINA DAVID presentation_Page_18_Image_0003 copy.webp" }) {
+    image3: file(relativePath: { eq: "pages/areas/MARINA DAVID presentation_Page_31_Image_0001 copy.webp" }) {
         childImageSharp {
           gatsbyImageData(
             height:400

@@ -29,7 +29,7 @@ const Theater = () => {
   return (
     <div id="#theater">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-12 py-12">
+        <div className="flex flex-col gap-12">
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
               <div className="flex flex-col gap-6">
@@ -47,7 +47,7 @@ const Theater = () => {
                 />
               ))}
             </div>
-            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14 pt-36">
+            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14 xl:pt-24">
               {data.allTheaterJson.nodes.slice(1, 3).map((node) => (
                 <WorkItem
                   key={node.id}

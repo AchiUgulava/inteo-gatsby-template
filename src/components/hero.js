@@ -6,7 +6,7 @@ import CtaButton from "../images/cta-button.svg";
 const Hero = () => {
   const data = useStaticQuery(graphql`
     {
-      heroimage: file(relativePath: { eq: "hero-image.webp" }) {
+      heroimage: file(relativePath: { eq: "MARINA DAVID presentation_Page_02_Image_0001 copy.webp" }) {
         childImageSharp {
           gatsbyImageData(
             width: 5120
